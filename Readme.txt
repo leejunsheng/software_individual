@@ -10,9 +10,9 @@ Project 2:  Final Year Project Management: Web app
 
 4. Students shall be able to submit the thesis/dissertation drafts
 
-5. students shall be able to submit their proposal presentation slides
+5. Students shall be able to submit their proposal presentation slides
 
-5. students shall be able to submit the final presentation slides
+6. students shall be able to submit the final presentation slides
 
 6. students shall be able to submit the FYP poster
 
