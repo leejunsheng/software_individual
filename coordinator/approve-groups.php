@@ -41,9 +41,7 @@
                <table class="w3-table-all">
                 <thead>
                   <tr class="w3-light-grey">
-                    <th>1st Member</th>
-                    <th>2nd Member</th>
-                    <th>3rd Member </th>
+                    <th>Student</th>
                     <th>Proposed Title</th>
                     <th>Approve</th>
                   </tr>
@@ -62,26 +60,6 @@
                     echo $member_row1['lName'].", ".$member_row1['fName']." ".$member_row1['mName'];
 
                    ?>
-                    
-                  </td>
-                  <td>
-                  <?php 
-                    $member2 =  $group_row['sMember'];
-                    $result2 = mysqli_query($dbcon, "SELECT * FROM student WHERE regNo = '$member2'") or die(mysqli_error());
-                    $member_row2 = mysqli_fetch_array($result2); 
-                    echo $member2."<br> ";
-                    echo $member_row2['lName'].", ".$member_row2['fName']." ".$member_row2['mName'];
-                  ?>
-                  </td>
-
-                  <td>
-                  <?php 
-                    $member3 =  $group_row['tMember']; 
-                    $result3 = mysqli_query($dbcon, "SELECT * FROM student WHERE regNo = '$member3'") or die(mysqli_error());
-                    $member_row3 = mysqli_fetch_array($result3);
-                    echo $member3."<br> ";
-                    echo $member_row3['lName'].", ".$member_row3['fName']." ".$member_row3['mName'];
-                  ?>
                     
                   </td>
                   <td>Title Comming Soon</td>

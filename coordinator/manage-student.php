@@ -64,7 +64,10 @@
 			  <td><?php 
 			  	$studentgr = mysqli_query($dbcon, "SELECT grpNo FROM members where regNo= '$theuser'") or die(mysql_error()); 
 			  	$studentgrpr_row = mysqli_fetch_array($studentgr);
-			  	echo $studentgrpr_row['grpNo'];//$user_row['expertise'] ?>
+				  if ($studentgrpr_row !== null) {
+					echo $studentgrpr_row['grpNo'];
+				  }
+			  	 ?>
 			  	
 			  </td>
 

@@ -79,13 +79,5 @@ exit();
              
         </div>      
       </div>
-      <br />
-
-      
-      <div class="w3-card-2 w3-round">
-        <div class="w3-white">
-          <a href="../search-projects.php"><button id="" class="w3-btn-block w3-blue w3-left-align" ><i class="fa fa-file-text fa-fw w3-margin-right"></i> Project Archieve</button></a>
-        </div>
-      </div>
-      <br>   
+      <br /> 
 

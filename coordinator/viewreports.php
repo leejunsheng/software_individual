@@ -37,11 +37,11 @@
 					<thead>
 					  <tr class="w3-dark-grey">
 					    <th>Group No.</th>
-					    <th>Progress Report Review</th>
-					    <th>1st Semester Progress </th>
-					    <th>1st Semester Final </th>
-					    <th>2nd Semester Progress </th>
-					    <th>Final Report </th>
+					    <th>FYP Proposal</th>
+					    <th>Thesis Drafts</th>
+					    <th>Proposal Presentation Slides</th>
+					    <th>Poster</th>
+					    <th>Final Report</th>
 					   
 					  </tr>
 					</thead>
