@@ -126,7 +126,7 @@ include('nav-header.php');
                 <div class="mb-4">
                     <div class="form-outline">
                     Don't have an account? 
-                    Get it from your coordinator.
+                    Get it from your coordinator.!
                      
                     </div>
                   </div>
