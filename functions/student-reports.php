@@ -61,7 +61,7 @@ if ($group !== null) {
 
 			</table> ";
 	}else{
-		echo "<h4 class='w3-center'> YOU HAVE NOT SwwwNY REPORTS </h4>";
+		echo "<h4 class='w3-center'> YOU HAVE NOT SUMMITED REPORTS </h4>";
 	}
 } else {
 	echo "<h4 class='w3-center'> YOU HAVE NOT SUBMITTED ANY REPORTS </h4>";

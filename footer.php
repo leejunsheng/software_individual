@@ -1,8 +1,10 @@
-<footer class="w3-container w3-theme-d5 w3-center">
+<footer class="w3-container w3-theme-d3 w3-center">
       <div class="w3-container">
-        <p>&copy<?php $yr=getdate(date("U")); echo "$yr[year]";   ?> CoICT-UDSM - All Rights Reserved. </p>
+        <p class="pt-3"> BIBIS2123 SEP2022 Group 5</p>
       </div>
 </footer>
+
+
 <script>
 // Accordion
 function myFunction(id) {
