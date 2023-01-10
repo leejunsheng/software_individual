@@ -1,4 +1,4 @@
-<?php 
+<?php
   include '../header.php';
  
   $result = mysqli_query($dbcon, "SELECT * FROM supervisor") or die(mysql_error());
@@ -11,7 +11,7 @@
   <div class="w3-row-padding">
     <!-- Left Column -->
     <div class="w3-col m3 ">
-    <?php 
+    <?php
       include 'coord-nav.php';
     ?>
     <!-- End Left Column -->
@@ -44,7 +44,7 @@
 				    <th>Actions</th>
 				  </tr>
 				</thead>
-				<?php  
+				<?php 
 					while($user_sup = mysqli_fetch_array($result)) {
 				  	$theuser = $user_sup['empId']; 
 				  	$roleresult = mysqli_query($dbcon, "SELECT * FROM login WHERE user = '$theuser'  ") or die(mysql_error());
@@ -55,14 +55,14 @@
 
 				<tr>
 				  <!-- td><input type="checkbox" class="archive" name="archive" value="" ></td -->
-				  <td><?php  echo $user_sup['fName']." ".$user_sup['lName']; ?></td>
-				  <td><?php  echo $user_sup['expertise']; ?></td>
-				  <td><?php  echo $user_sup['phoneNo']; ?></td>
-				  <td><?php  echo $user_sup['email']; ?></td>
-				  <td><?php  echo $user_sup['office'];  ?></td>
+				  <td><?php echo $user_sup['fName']." ".$user_sup['lName']; ?></td>
+				  <td><?php echo $user_sup['expertise']; ?></td>
+				  <td><?php echo $user_sup['phoneNo']; ?></td>
+				  <td><?php echo $user_sup['email']; ?></td>
+				  <td><?php echo $user_sup['office'];  ?></td>
 				  <td>
-				  	<?php  echo '<a href="edituser.php?user='.$theuser.'"><button class="w3-btn w3-green"'; ?> >Edit</button></a>
-				  	<?php  
+				  	<?php echo '<a href="edituser.php?user='.$theuser.'"><button class="w3-btn w3-green"'; ?> >Edit</button></a>
+				  	<?php 
 
 				  	if ($role=="1") { 
 				  			echo '<button class="w3-btn w3-yellow" onclick="upgradeUser()"><i class="fa fa-arrow-up fa-fw "></i></button>';
@@ -74,7 +74,7 @@
 				  	 ?>
 				  </td>
 				</tr>
-				<?php  } ?>
+				<?php } ?>
 			</table>
 	        </div>
 	      </div>
@@ -94,7 +94,7 @@
 <br>
 
 <!-- Footer -->
-<?php 
+<?php
   include '../footer.php';
 ?>
 
@@ -120,11 +120,11 @@ var xhttp = new XMLHttpRequest();
       }
     };
   function upgradeUser() {
-  xhttp.open("GET", "<?php  echo 'gradeuser.php?user='.$theuser; ?>" , true);
+  xhttp.open("GET", "<?php echo 'gradeuser.php?user='.$theuser; ?>" , true);
     xhttp.send();
   }
   function downgradeUser() {
-  xhttp.open("GET", "<?php  echo 'gradeuser.php?user='.$theuser; ?>" , true);
+  xhttp.open("GET", "<?php echo 'gradeuser.php?user='.$theuser; ?>" , true);
     xhttp.send();
   }
 

@@ -26,4 +26,4 @@
 	</style>
 
 </head>
-<?php  include('dbcon.php'); ?>
+<?php include('dbcon.php'); ?>

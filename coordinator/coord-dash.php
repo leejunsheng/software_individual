@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 include '../dbcon.php';
 
@@ -27,7 +27,7 @@ $supId  = $_SESSION['id'];
       </header>
 
       <div class="w3-container">
-        <?php  
+        <?php 
             
           echo "<p>There are ".$grouprows." group(s). </p>";
           echo "<p>".$concept_num_row." concept notes have been submitted. </p>";
@@ -46,7 +46,7 @@ $supId  = $_SESSION['id'];
         </header>
 
         <div class="w3-container">
-          <?php 
+          <?php
             
             
 
@@ -85,7 +85,7 @@ $supId  = $_SESSION['id'];
       </header>
 
       <div class="w3-container">
-        <?php  
+        <?php 
           $grpsql = mysqli_query($dbcon, "SELECT * FROM grp ") or die(mysqli_error());
           $grouprows = mysqli_num_rows($grpsql) ;   
           echo "<p>There are ".$grouprows." group(s). </p>";
@@ -103,7 +103,7 @@ $supId  = $_SESSION['id'];
         </header>
 
         <div class="w3-container">
-          <?php 
+          <?php
             
                 echo "<p>Evaluation Activities havent been scheduled yet. </p>";
             

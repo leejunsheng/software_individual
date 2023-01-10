@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 include '../dbcon.php';
 
@@ -17,7 +17,7 @@ $supId  = $_SESSION['id'];
       </header>
 
       <div class="w3-container">
-        <?php  
+        <?php 
           $grpsql = mysqli_query($dbcon, "SELECT * FROM grp WHERE empId = '$supId'") or die(mysqli_error());
           $grouprows = mysqli_num_rows($grpsql) ;   
           echo "<p>You are supervising ".$grouprows." group(s). </p>";
@@ -35,7 +35,7 @@ $supId  = $_SESSION['id'];
         </header>
 
         <div class="w3-container">
-          <?php 
+          <?php
             $studentconcept = mysqli_query($dbcon, "SELECT * FROM conceptnote WHERE supervisor = '$get_user'") or die(mysqli_error());
             $concept_num_row = mysqli_num_rows($studentconcept);
 

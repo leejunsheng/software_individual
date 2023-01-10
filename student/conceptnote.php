@@ -1,4 +1,4 @@
-<?php 
+<?php
   include '../header.php';
     if (!($_SESSION['id']) ){
     header('location:../index.php');
@@ -14,7 +14,7 @@
 
     <!-- Left Column -->
     <div class="w3-col m3">
-      <?php  include 'stu-nav.php';     ?>
+      <?php include 'stu-nav.php';     ?>
       <br />
     </div>    
     <!-- End Left Column -->
@@ -40,7 +40,7 @@
           <div class="w3-card-2 w3-white">  
             <div class="w3-container w3-padding"> 
 
-            <form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" enctype="multipart/form-data" >
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" enctype="multipart/form-data" >
               <br />
 
               <div class="w3-row">
@@ -62,7 +62,7 @@
                 <div class="w3-col m8">
                   <select class="w3-select" name="propsup">
                   <option value="" >Propose A Supervisor</option>
-                    <?php 
+                    <?php
                       $result = mysqli_query($dbcon, "SELECT * FROM supervisor") or die(mysql_error());
                       while ($user_row = mysqli_fetch_array($result)) {
                       $supervisor = $user_row['empId'];
@@ -86,7 +86,7 @@
               </div>            
             </form>
 
-            <?php 
+            <?php
               if (isset($_POST['submit'])) {
 /*
                 $propsupervisor = mysqli_real_escape_string($_POST['propsup']);
@@ -109,14 +109,14 @@
                  window.location = 'index.php';
                  
                   </script>
-                <?php  
+                <?php 
                 } else {  ?>
                   
                   <script>
                   alert('Concept Note Successfully Submitted..');
                 window.location = 'index.php';
                   </script>    
-                <?php 
+                <?php
                
                     }
 
@@ -143,5 +143,5 @@
 <!-- Footer -->
 
 
-<?php  include '..\footer.php'; ?>
+<?php include '..\footer.php'; ?>
 

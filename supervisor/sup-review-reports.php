@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include '../header.php';
 
 	$supId = $_SESSION['id'];
@@ -19,7 +19,7 @@
   <div class="w3-row-padding">
     <!-- Left Column -->
     <div class="w3-col m3 ">
-    <?php 
+    <?php
       include 'sup-nav.php';
     ?>
     <!-- End Left Column -->
@@ -39,15 +39,15 @@
 			   
 			  </tr>
 			</thead>
-			<?php  
+			<?php 
 				while($report = mysqli_fetch_array($reportsql)) {
 				$reviewfile = $report['review'];
 			
 			?>
 			<tr>
-			  <td><?php  echo $groupNo ?></td>
-			  <td><a <?php  echo 'href="'.$reviewfile.'"'; ?>> View Report </a></td>
-			<?php  } ?>
+			  <td><?php echo $groupNo ?></td>
+			  <td><a <?php echo 'href="'.$reviewfile.'"'; ?>> View Report </a></td>
+			<?php } ?>
 		</table>   
 
 		</div>
@@ -64,7 +64,7 @@
 <br>
 
 <!-- Footer -->
-<?php 
+<?php
   include '../footer.php';
 ?>
 

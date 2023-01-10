@@ -3,7 +3,7 @@
 <div class="w3-container">
   <div class="w3-card-2">
 
-    <?php 
+    <?php
 
     	include '../dbcon.php';    
     	$groupsugId = $_GET['groupsug'];
@@ -29,7 +29,7 @@
   </div>
 </div>
 
-<?php 
+<?php
              
 	?>
 

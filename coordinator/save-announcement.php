@@ -1,4 +1,4 @@
-<?php   
+<?php  
 	
               if (isset($_POST['submit'])) 
               {
@@ -9,9 +9,9 @@
                 if ($save) {
                   ?>
               <script> alert("Your announcement has been posted"); </script>
-                <?php   } else { ?>
+                <?php  } else { ?>
               <script> alert("Sorry, your announcement post failed"); </script>
-              <?php 
+              <?php
                 }
               }
 ?>

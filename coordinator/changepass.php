@@ -1,4 +1,4 @@
-       <?php 
+       <?php
 
        $get_user = $_GET['user'];
               if(isset($_POST['update']))
@@ -16,13 +16,13 @@
                   ?>
                       <!--script> alert("Password changed successfully"); </script -->
                       
-                  <?php 
+                  <?php
                     
                     } else { 
                       echo "Something went wrong password was not changed";
                       ?>
                       <!-- script> alert("Something went wrong password was not changed"); </script-->
-                  <?php  
+                  <?php 
                   
                 }
                   
@@ -30,7 +30,7 @@
               echo "Passwords don't match"; 
               ?>
                  <!-- script> alert("Passwords don't match"); </script-->
-              <?php 
+              <?php
               
                       }
            }

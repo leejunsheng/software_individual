@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 
   if (!($_SESSION['id']) ){
   header('location:../index.php');
@@ -17,7 +17,7 @@
          <h4 class="w3-center">Supervisor's Dashboard</h4>
          
          <hr>
-         <p class="w3-center"> Name: <?php  echo $user_row['fName']." ".$user_row['lName'] ?> </p>
+         <p class="w3-center"> Name: <?php echo $user_row['fName']." ".$user_row['lName'] ?> </p>
          
         </div>
       </div>
@@ -36,7 +36,7 @@
       <div class="w3-card-2">
             <div class="w3-white">
 
-            <?php  
+            <?php 
             #$conceptsql = "SELECT * FROM conceptnote WHERE student = '$regNo'";
             $studentconcept = mysqli_query($dbcon, "SELECT * FROM conceptnote WHERE supervisor = '$get_user'") or die(mysqli_error());
 
@@ -44,7 +44,7 @@
             $concept_num_row = mysqli_num_rows($studentconcept);
             if($concept_num_row > "0") { ?>
                 <a href="supervisor-concepts.php"><button class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> View Concept Notes</button></a>
-                <?php  } 
+                <?php } 
            /* else { 
                 echo "There are no any submitted concepts. <br />";
             } */

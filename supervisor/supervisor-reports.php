@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include '../header.php';
 $supId = $_SESSION['id'];
@@ -31,7 +31,7 @@ if ($report !== null) {
 	<div class="w3-row-padding">
 		<!-- Left Column -->
 		<div class="w3-col m3 ">
-			<?php 
+			<?php
 			include 'sup-nav.php';
 			?>
 			<!-- End Left Column -->
@@ -53,7 +53,7 @@ if ($report !== null) {
 					   
 					  </tr>
 					</thead>
-					<?php  
+					<?php 
 
 					while ($group = mysqli_fetch_array($grpsql)) {
 	 
@@ -73,9 +73,9 @@ if ($report !== null) {
 							$sem2_final = $report['sem2_final'];
 					?>
 					<tr>
-					  <td><?php  echo $groupNo; ?></td>
+					  <td><?php echo $groupNo; ?></td>
 					  <td>
-					  	<?php  
+					  	<?php 
 					  		if (!empty($report1file)) {
 							echo '<a  href="'.$report1file.'"> View Report </a>';
 							} else {
@@ -85,7 +85,7 @@ if ($report !== null) {
 					  </td>
 
 					  <td>
-					  	<?php  
+					  	<?php 
 					  		if (!empty($sem1_progress)) {
 							echo '<a  href="'.$sem1_progress.'"> View Report </a>';
 							} else {
@@ -95,7 +95,7 @@ if ($report !== null) {
 					  		
 					  </td>
 					  <td>
-					  	<?php 
+					  	<?php
 					  	 if (!empty($sem1_final)) {
 							echo '<a  href="'.$sem1_final.'"> View Report </a>';
 							} else {
@@ -104,7 +104,7 @@ if ($report !== null) {
 					  	?>
 					  		
 					  </td>
-					  <td><?php  
+					  <td><?php 
 					  if (!empty($sem2_progress)) {
 							echo '<a  href="'.$sem2_progress.'"> View Report </a>';
 							} else {
@@ -112,7 +112,7 @@ if ($report !== null) {
 							}
 							?>
 						</td>
-					  <td><?php  if (!empty($sem2_final)) {
+					  <td><?php if (!empty($sem2_final)) {
 							echo '<a  href="'.$sem2_final.'"> View Report </a>';
 							} else {
 								echo 'No Submission' ;
@@ -139,6 +139,6 @@ if ($report !== null) {
 <br>
 
 <!-- Footer -->
-<?php 
+<?php
 include '../footer.php';
 ?>

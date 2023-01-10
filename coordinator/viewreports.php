@@ -1,6 +1,6 @@
 
 
-<?php 
+<?php
 	
 	 include '../header.php';
 	$result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
@@ -18,7 +18,7 @@
   <div class="w3-row-padding">
     <!-- Left Column -->
     <div class="w3-col m3 ">
-    <?php 
+    <?php
       include 'coord-nav.php';
     ?>
     <!-- End Left Column -->
@@ -45,7 +45,7 @@
 					   
 					  </tr>
 					</thead>
-					<?php  
+					<?php 
 
 					while ($group = mysqli_fetch_array($grpsql)) {
 	 
@@ -65,9 +65,9 @@
 							$sem2_final = $report['sem2_final'];
 					?>
 					<tr>
-					  <td><?php  echo $groupNo; ?></td>
+					  <td><?php echo $groupNo; ?></td>
 					  <td>
-					  	<?php  
+					  	<?php 
 					  		if (!empty($report1file)) {
 							echo '<a  href="'.$report1file.'"> View Report </a>';
 							} else {
@@ -77,7 +77,7 @@
 					  </td>
 
 					  <td>
-					  	<?php  
+					  	<?php 
 					  		if (!empty($sem1_progress)) {
 							echo '<a  href="'.$sem1_progress.'"> View Report </a>';
 							} else {
@@ -87,7 +87,7 @@
 					  		
 					  </td>
 					  <td>
-					  	<?php 
+					  	<?php
 					  	 if (!empty($sem1_final)) {
 							echo '<a  href="'.$sem1_final.'"> View Report </a>';
 							} else {
@@ -96,7 +96,7 @@
 					  	?>
 					  		
 					  </td>
-					  <td><?php  
+					  <td><?php 
 					  if (!empty($sem2_progress)) {
 							echo '<a  href="'.$sem2_progress.'"> View Report </a>';
 							} else {
@@ -104,7 +104,7 @@
 							}
 							?>
 						</td>
-					  <td><?php  if (!empty($sem2_final)) {
+					  <td><?php if (!empty($sem2_final)) {
 							echo '<a  href="'.$sem2_final.'"> View Report </a>';
 							} else {
 								echo 'No Submission' ;
@@ -135,7 +135,7 @@
 <br>
 
 <!-- Footer -->
-<?php 
+<?php
   include '../footer.php';
 ?>
 

@@ -1,7 +1,7 @@
 <div class="w3-container">
   <div class="w3-card-2">
 
-    <?php 
+    <?php
 
     	include '../dbcon.php';    
     	$concept = $_GET['concept'];

@@ -1,4 +1,4 @@
-<?php 
+<?php
   include '../header.php';
     if (!($_SESSION['id']) ){
     header('location:../index.php');
@@ -15,7 +15,7 @@
 
     <!-- Left Column -->
     <div class="w3-col m3">
-      <?php  include 'stu-nav.php';     ?>
+      <?php include 'stu-nav.php';     ?>
       <br />
     </div>    
     <!-- End Left Column -->
@@ -30,7 +30,7 @@
           </div>
         </div>
               
-        <?php  include '../functions/announcements.php'; ?>
+        <?php include '../functions/announcements.php'; ?>
       </div>
     </div>
     <!-- End Middle Column -->
@@ -46,5 +46,5 @@
 <!-- Footer -->
 
 
-<?php  include '..\footer.php'; ?>
+<?php include '..\footer.php'; ?>
 

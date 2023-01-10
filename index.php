@@ -39,12 +39,12 @@
     backdrop-filter: saturate(200%) blur(25px);
   }
 </style>
-<?php 
+<?php
 include('session.php');
 include('nav-header.php');
 ?>
 
-  <?php 
+  <?php
   if (isset($_POST['submit'])) {
 
     $username = $_POST['username'];
@@ -139,4 +139,4 @@ include('nav-header.php');
       </div>
     </div>
   </section> 
-   <?php  include('footer.php'); ?>
+   <?php include('footer.php'); ?>

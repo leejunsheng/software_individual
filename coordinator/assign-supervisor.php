@@ -1,6 +1,6 @@
 
 
-<?php 
+<?php
   include '../header.php';
 
 ?>
@@ -11,7 +11,7 @@
   <div class="w3-row">
     <!-- Left Column -->
     <div class="w3-col m3">
-    <?php 
+    <?php
       include 'coord-nav.php';
     ?>
     <!-- End Left Column -->
@@ -39,7 +39,7 @@
          <div class="w3-container w3-padding">
          <p class="w3-small w3-right-align">Note assigned groups will appear under the <button onclick="viewGroups()" class="w3-btn w3-blue w3-left-align"><i class="fa fa-users fa-fw "></i>View Groups </button> button</p>    
           <div class="w3-center">
-           <?php  
+           <?php 
             $sqlgrp = mysqli_query($dbcon, "SELECT * FROM `suggestedgroup` WHERE approval='approved'") or die(mysqli_error($dbcon));
             //$group_row = mysqli_fetch_array($sqlgrp);
             $num_row = mysqli_num_rows($sqlgrp);
@@ -58,13 +58,13 @@
                     <th>Approve</th>
                   </tr>
                 </thead>
-                <?php  
+                <?php 
                   while($group_row = mysqli_fetch_array($sqlgrp)) {
                             $assignId =  $group_row['sugId'];
                 ?>
                 <tr>
                   <td>
-                  <?php  
+                  <?php 
                    	$member1 = $group_row['fMember'];
                     $result1 = mysqli_query($dbcon, "SELECT * FROM student WHERE regNo = '$member1'") or die(mysqli_error());
                     $member_row1 = mysqli_fetch_array($result1);
@@ -86,14 +86,14 @@
                   ?>
                     
                   </td>
-                  <td><?php 
+                  <td><?php
                    $title="Title";
                    echo $title;
                   
                   ?></td>
-                  <td><form method="POST" action="<?php  echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                  <td><form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                   	<select class="w3-select" name="assignedsupervisor">
-                  	<?php 
+                  	<?php
                   		$result = mysqli_query($dbcon, "SELECT * FROM supervisor") or die(mysql_error());
                   		while ($user_row = mysqli_fetch_array($result)) {
                   		$supervisor = $user_row['empId'];
@@ -108,8 +108,8 @@
 
                     </td>
                 </tr>
-                <?php  } //End While ?>
-                <?php  
+                <?php } //End While ?>
+                <?php 
                     if (isset($_POST['assign'])) {
                       $assignedsupervisor = $_POST['assignedsupervisor'];
                       $randId = rand(713, 100000);
@@ -135,7 +135,7 @@
                     } 
                   ?>  
               </table>
-             <?php  
+             <?php 
              } //End Else
              ?>
             </div>      
@@ -158,7 +158,7 @@
 <br>
 
 <!-- Footer -->
-<?php 
+<?php
   include '../footer.php';
 ?>
 

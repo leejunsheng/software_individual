@@ -1,4 +1,4 @@
-<?php 
+<?php
 include '../dbcon.php';
 
 include '../header.php';
@@ -18,7 +18,7 @@ include '../header.php';
   <div class="w3-row">
     <!-- Left Column -->
     <div class="w3-col m3">
-    <?php 
+    <?php
       include '../supervisor/sup-nav.php';
     ?>
     
@@ -32,7 +32,7 @@ include '../header.php';
         <div class="w3-col m12">
          <span id="notification"></span> <br />
      
-      <?php  
+      <?php 
 			echo "This is the Title: ".$title;
 
 				//Supervisor
@@ -53,6 +53,6 @@ include '../header.php';
 </div>
 <br />
 
-	<?php 
+	<?php
 include '../footer.php';
 	?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 setcookie(session_name(), '',time()+ 1200);

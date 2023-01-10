@@ -1,4 +1,4 @@
-<?php 
+<?php
   //include 'header.php';
 
 ?>
@@ -35,7 +35,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 
     <!-- Left Column -->
     <div class="w3-col m3 w3-grey w3-padding">
-      <?php  
+      <?php 
         echo "<h2>Final Year Projects Management System </h2>";   
         echo "<h4 class=\"w3-col m12\">The Projects Archieve</h4>";  
 
@@ -81,7 +81,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 <!-- Footer -->
 <footer class="w3-container w3-theme-d5 w3-center">
       <div class="w3-container">
-        <p>&copy<?php  $yr=getdate(date("U")); echo "$yr[year]";   ?> CoICT-UDSM - All Rights Reserved. </p>
+        <p>&copy<?php $yr=getdate(date("U")); echo "$yr[year]";   ?> CoICT-UDSM - All Rights Reserved. </p>
       </div>
 </footer>
 <script>

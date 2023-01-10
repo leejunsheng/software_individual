@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (!($_SESSION['id']) ){
 header('location:../index.php');
@@ -11,7 +11,7 @@ exit();
         <div class="w3-center w3-container">
          <h4 class="">Coordinator's Dashboard</h4>
          <hr>
-         <p><i class="fa fa-person fa-fw "></i> Name: <?php  echo "Cosmas Mushi" ?></p>
+         <p><i class="fa fa-person fa-fw "></i> Name: <?php echo "Cosmas Mushi" ?></p>
         </div>
       </div>
       <br>
@@ -36,14 +36,14 @@ exit();
       <div class="w3-card-2 w3-round">
             <div class="w3-white">
 
-            <?php  
+            <?php 
             $studentconcept = mysqli_query($dbcon, "SELECT * FROM conceptnote ") or die(mysqli_error());
 
             $concept_note = mysqli_fetch_array($studentconcept);
             $concept_num_row = mysqli_num_rows($studentconcept);
             if($concept_num_row > "0") { ?>
                 <a href="viewconcepts.php"><button class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-file-text fa-fw w3-margin-right"></i> View Concept Notes</button></a>
-                <?php  } 
+                <?php } 
             else { 
                 echo "There are no any submitted concepts. <br />";
             } 
