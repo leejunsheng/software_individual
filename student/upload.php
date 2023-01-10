@@ -1,4 +1,4 @@
-<?php
+<?php 
 $target_dir = "../concept-notes/";
 $target_file = $target_dir . basename($_FILES["concept"]["name"]);
 $uploadOk = 1;

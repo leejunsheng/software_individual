@@ -1,4 +1,4 @@
-<?php
+<?php 
 	
 	include '../dbcon.php';
 	$result = mysqli_query($dbcon, "SELECT * FROM supervisor") or die(mysql_error());
@@ -18,18 +18,18 @@
 		    <th>Office</th>
 		  </tr>
 		</thead>
-		<?php 
+		<?php  
 			while ($user_row = mysqli_fetch_array($result)) {		
 		?>
 
 		<tr>
-		  <td><?php echo $user_row['fName']." ".$user_row['lName']; ?></td>
-		  <td><?php echo $user_row['expertise']; ?></td>
-		  <td><?php echo $user_row['phoneNo']; ?></td>
-		  <td><?php echo $user_row['email']; ?></td>
-		  <td><?php echo $user_row['office'];  ?></td>
+		  <td><?php  echo $user_row['fName']." ".$user_row['lName']; ?></td>
+		  <td><?php  echo $user_row['expertise']; ?></td>
+		  <td><?php  echo $user_row['phoneNo']; ?></td>
+		  <td><?php  echo $user_row['email']; ?></td>
+		  <td><?php  echo $user_row['office'];  ?></td>
 		</tr>
-		<?php } ?>
+		<?php  } ?>
 	</table>
 </div>
 </div>

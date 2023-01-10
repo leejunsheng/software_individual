@@ -1,4 +1,4 @@
-<?php
+<?php 
 $target_dir = "../finalsub-reports/";
 $target_file = $target_dir . basename($_FILES["report"]["name"]);
 $uploadOk = 1;

@@ -1,5 +1,5 @@
 
-<?php
+<?php 
 	
 	 include '../header.php';
 	$result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
@@ -16,7 +16,7 @@
   <div class="w3-row-padding">
     <!-- Left Column -->
     <div class="w3-col m3 ">
-    <?php
+    <?php 
       include 'coord-nav.php';
     ?>
     <!-- End Left Column -->
@@ -49,19 +49,19 @@
 			    <th>Actions</th>
 			  </tr>
 			</thead>
-			<?php 
+			<?php  
 				while ($user_row = mysqli_fetch_array($result)) {		
 			?>
 
 			<tr>
-			  <!-- td><input type="checkbox" class="archive" name="archive[]" value="<?php //echo $user_row['regNo'];  ?>" ></td -->
+			  <!-- td><input type="checkbox" class="archive" name="archive[]" value="<?php  //echo $user_row['regNo'];  ?>" ></td -->
 
-			  <td><?php echo $user_row['regNo'];  ?></td>
-			  <?php $theuser = $user_row['regNo'];  ?>
+			  <td><?php  echo $user_row['regNo'];  ?></td>
+			  <?php  $theuser = $user_row['regNo'];  ?>
 
-			  <td><?php echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName']; ?></td>
+			  <td><?php  echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName']; ?></td>
 
-			  <td><?php 
+			  <td><?php  
 			  	$studentgr = mysqli_query($dbcon, "SELECT grpNo FROM members where regNo= '$theuser'") or die(mysql_error()); 
 			  	$studentgrpr_row = mysqli_fetch_array($studentgr);
 				  if ($studentgrpr_row !== null) {
@@ -71,15 +71,15 @@
 			  	
 			  </td>
 
-			  <td><?php echo $user_row['email']; ?></td>
-			  <td><?php echo $user_row['course']; ?></td>
+			  <td><?php  echo $user_row['email']; ?></td>
+			  <td><?php  echo $user_row['course']; ?></td>
 			  <td>
-			  	 <?php echo '<a href="edituser.php?user='.$theuser.'"><button class="w3-btn w3-green" '?>">Edit</button></a>
+			  	 <?php  echo '<a href="edituser.php?user='.$theuser.'"><button class="w3-btn w3-green" '?>">Edit</button></a>
 			  </td>
 			</tr>
-			<?php } ?>
+			<?php  } ?>
 		</table>
-		<?php 
+		<?php  
 
 		if (isset($_POST['archive'])) {
 			$archivestudent = $_POST['regNo'];
@@ -106,7 +106,7 @@
 <br>
 
 <!-- Footer -->
-<?php
+<?php 
   include '../footer.php';
 ?>
 <script>

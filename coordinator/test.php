@@ -1,4 +1,4 @@
-<?php
+<?php 
   include '../header.php';
 ?>
 
@@ -14,7 +14,7 @@ Test<br />
         <div class="w3-card-2 w3-round">
         <div class="w3-white">  
          
-            <?php 
+            <?php  
             $sqlgrp = mysqli_query($dbcon, "SELECT * FROM `suggestedgroup` ") or die(mysqli_error($dbcon));
             $group_row = mysqli_fetch_array($sqlgrp);
 
@@ -30,7 +30,7 @@ Test<br />
       <br />
       
                    
-            <?php }
+            <?php  }
             elseif($approval=='approved') { 
               ?>
         <div class="w3-card-2 w3-round">
@@ -38,7 +38,7 @@ Test<br />
                <a href="assign-supervisor.php"><button class="w3-btn w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Assign Supervisors</button></a>
      
 
-            <?php } ?>
+            <?php  } ?>
             
         </div>
       </div>

@@ -1,4 +1,4 @@
-<?php
+<?php 
 	include '../dbcon.php';
 
 	$grpsql = mysqli_query($dbcon, "SELECT * FROM grp ") or die(mysqli_error());
@@ -19,7 +19,7 @@
 	   
 	  </tr>
 	</thead>
-	<?php 
+	<?php  
 		while($group = mysqli_fetch_array($grpsql)) {
     $groupNo = $group['grpNo'];
 
@@ -36,11 +36,11 @@
 	$sem2_final = $report['sem2_final'];
 	?>
 	<tr>
-	  <td><?php echo $groupNo ?></td>
-	  <td><a <?php echo 'href="'.$reviewfile.'"'; ?>> View Report </a></td>
-	  <td><a <?php echo 'href="'.$sem1_progress.'"'; ?>> View Report </a></td>
-	  <td><a <?php echo 'href="'.$sem1_final.'"'; ?>> View Report </a></td>
-	  <td><a <?php echo 'href="'.$sem2_progress.'"'; ?>> View Report </a></td>
-	  <td><a <?php echo 'href="'.$sem2_final.'"'; ?>> View Report </a></td>
-	<?php } //} ?>
+	  <td><?php  echo $groupNo ?></td>
+	  <td><a <?php  echo 'href="'.$reviewfile.'"'; ?>> View Report </a></td>
+	  <td><a <?php  echo 'href="'.$sem1_progress.'"'; ?>> View Report </a></td>
+	  <td><a <?php  echo 'href="'.$sem1_final.'"'; ?>> View Report </a></td>
+	  <td><a <?php  echo 'href="'.$sem2_progress.'"'; ?>> View Report </a></td>
+	  <td><a <?php  echo 'href="'.$sem2_final.'"'; ?>> View Report </a></td>
+	<?php  } //} ?>
 </table>   

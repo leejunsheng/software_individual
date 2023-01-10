@@ -1,4 +1,4 @@
-<?php
+<?php 
 	include '../dbcon.php';
 	session_start();
 
@@ -40,38 +40,38 @@
          <hr>
          <div class="w3-col m3">Name:</div>
          <div class="w3-col m9">
-         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php echo $student_row['lName'].", ".$student_row['fName']." ".$student_row['mName'] ?>
+         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php  echo $student_row['lName'].", ".$student_row['fName']." ".$student_row['mName'] ?>
          </div>
         <br />
          <div class="w3-col m3">Registartion Number:</div>
          <div class="w3-col m9">
-         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php echo $regNo;  ?>
+         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php  echo $regNo;  ?>
          </div>
     <br />
          <div class="w3-col m3">Course:</div>
          <div class="w3-col m9">
-         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php echo $student_row['course']; ?>
+         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php  echo $student_row['course']; ?>
          </div>
          <br />
          <div class="w3-col m3">Project Title</div>
          <div class="w3-col m9">
-         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php echo "TITLE OF THE PROJECT";  ?>
+         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php  echo "TITLE OF THE PROJECT";  ?>
          </div>
          <br />
          <div class="w3-col m3">Group</div>
          <div class="w3-col m9">
-         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php if($num_row < 0) {echo "None"; } else echo $groupNo;  ?>
+         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php  if($num_row < 0) {echo "None"; } else echo $groupNo;  ?>
          </div>
          <br />
          <div class="w3-col m3">Supervisor:</div>
          <div class="w3-col m9">
-         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php echo $supervisor;  ?>
+         <i class="fa fa-fw w3-margin-right w3-text-theme"></i><?php  echo $supervisor;  ?>
          </div>
          <br />
          <div class="w3-col m3">Group Members:</div>
          <div class="w3-col m9">
          <i class="fa fa-fw w3-margin-right w3-text-theme"></i>
-         <?php
+         <?php 
           if ($num_row > 0) {
 
             $membersql = mysqli_query($dbcon,"SELECT * FROM members WHERE grpNo = $groupNo") or die(mysqli_error());
@@ -102,7 +102,7 @@
         </div>
       </div>
       <br />
-<?php
+<?php 
     }
     else if($role == 1) 
     {
@@ -127,13 +127,13 @@
               <div class="w3-col m12">
               <h3 class="w3-center">UPDATE PASSWORD</h3>
               </div>
-              <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+              <form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="w3-col m4 w3-padding"><input class="w3-input" type="password" name="pass" placeholder="Password"> </div>
 		        <div class="w3-col m4 w3-padding"><input class="w3-input" type="password" name="confirmpass" placeholder="Confirm Password"></div>
 		        <div class="w3-col m4 w3-padding"><button name="update" class="w3-btn"> Update Password</button></div>
 		      </form> 
 
-              <?php
+              <?php 
               if(isset($_POST['update']))
             {
               $pass = $_POST['pass'];
@@ -156,17 +156,17 @@
                     
                   ?>
                       <script> alert("Password changed successfully"); </script>
-                  <?php
+                  <?php 
                     
                     } else { ?>
                       <script> alert("Something went wrong password was not changed"); </script>
-                  <?php 
+                  <?php  
                   
                 }
                   
               } else { ?>
                  <script> alert("Passwords don't match"); </script>
-              <?php
+              <?php 
               if($role == 2) {
                       header('location:../student/'); 
                     }

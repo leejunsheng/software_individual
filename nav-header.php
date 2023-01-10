@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
 	<title>CoICT FYPMS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,4 +26,4 @@
 	</style>
 
 </head>
-<?php include('dbcon.php'); ?>
+<?php  include('dbcon.php'); ?>

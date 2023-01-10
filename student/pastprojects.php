@@ -1,6 +1,6 @@
 
 
-<?php
+<?php 
 	
 	include '../dbcon.php';
 
@@ -29,19 +29,19 @@
 	    <th>Grad Year</th>
 	  </tr>
 	</thead>
-	<?php 
+	<?php  
 		while($pastproject=mysqli_fetch_array($pastprojecttitle)) {
 	?>
 	<tr>
 	  
-	  <td><?php echo $pastproject['title']; ?></td>
+	  <td><?php  echo $pastproject['title']; ?></td>
 	  
-	  <td><a <?php echo 'href="'.$pastproject['pastprojectfile'].'"'; ?>>View Document</a></td>
-	  <td><?php echo $pastproject['year']; ?></td>
+	  <td><a <?php  echo 'href="'.$pastproject['pastprojectfile'].'"'; ?>>View Document</a></td>
+	  <td><?php  echo $pastproject['year']; ?></td>
    
     
 	</tr>
-	<?php } ?>
+	<?php  } ?>
 </table>
 </div>
 </div>

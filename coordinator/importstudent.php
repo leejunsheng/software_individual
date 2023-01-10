@@ -2,7 +2,7 @@
     <h3>IMPORT STUDENTS</h3>
 </div>
 
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" enctype="multipart/form-data" class="" name="upload_excel" >
+<form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" enctype="multipart/form-data" class="" name="upload_excel" >
                     
     <div class="">
             <input type="file" multiple name="filename" id="filename" class="w3-input">
@@ -15,7 +15,7 @@
     <a href="index.php"><button type="button" class="w3-btn"><i class="fa fa-reply"></i> Back</button></a>
 
      </form>
-<?php
+<?php 
 if (isset($_POST['submit'])) 
 {
 include('../dbcon.php');

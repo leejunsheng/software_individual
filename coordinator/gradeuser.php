@@ -1,5 +1,5 @@
 <div class="w3-card-2"> 
-<?php
+<?php 
 
 	include '../dbcon.php';    
 	$get_user = $_GET['user'];
@@ -28,13 +28,13 @@
 ?>
            	<script> window.location = 'manage-supervisor.php'; </script>
                       
-        <?php
+        <?php 
                     
           } else { 
             echo "Something went wrong the user was not downgraded";
             ?>
                 <script> alert("Something went wrong the user was not downgraded"); </script>
-        <?php 
+        <?php  
                   
       		}
         }//End Downgrade

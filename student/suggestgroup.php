@@ -1,4 +1,4 @@
-<?php
+<?php 
   include '../dbcon.php';
   include '../header.php';
 ?>
@@ -9,7 +9,7 @@
 
     <!-- Left Column -->
     <div class="w3-col m3">
-     <?php include 'stu-nav.php';     ?>
+     <?php  include 'stu-nav.php';     ?>
     <!-- End Left Column -->
     </div>
     
@@ -33,7 +33,7 @@
     <div class="w3-col m12">
       <div class="w3-card-2 w3-white">  
         <div class="w3-container w3-padding"> 
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="" >
+            <form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="" >
            
               <h4>Enter the registration numbers in the fields below</h4>
 
@@ -54,7 +54,7 @@
               <button type="submit" name="submit"  class="w3-padding w3-btn w3-blue">Submit Suggestion</button>
             </form>
              <br />
-            <?php
+            <?php 
 
               if (isset($_POST['submit'])) 
               {
@@ -65,9 +65,9 @@
                 if ($suggestion) {
                   ?>
               <script> alert("Your grou suggestion has been recorded"); </script>
-                <?php  } else { ?>
+                <?php   } else { ?>
               <script> alert("Sorry, your suggestion failed"); </script>
-              <?php
+              <?php 
                 }
               }
           ?>
@@ -92,7 +92,7 @@
 <br>
 
 <!-- Footer -->
-<?php
+<?php 
   include '../footer.php';
 ?>
 

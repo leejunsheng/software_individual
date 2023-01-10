@@ -1,5 +1,5 @@
 
-<?php
+<?php 
   include '../dbcon.php';
   include '../session.php';
   $student = $_SESSION['id'];
@@ -21,7 +21,7 @@
     <div class="w3-col m12">
       <div class="w3-card-2 w3-white">  
         <div class="w3-container w3-padding" id="reportsub"> 
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="" enctype="multipart/form-data">
+            <form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="" enctype="multipart/form-data">
               <br />
               <input type="file" name="report" class="w3-input" placeholder="Choose File" onchange="readURL(this)" required>
               <span id="reportname" class="w3-hide"></span>
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-<?php
+<?php 
 if (isset($_POST['submit'])) {
 
   //$report = $_POST['report'];
@@ -98,14 +98,14 @@ if (($insert = true) && ($uploadOk == 1)) { ?>
     alert('Report Successfully Submitted.');
    window.location = 'index.php';
     </script>
-  <?php 
+  <?php  
   } else { var_dump($insert); var_dump($uploadOk); ?>
     
     <script>
     alert('Something went wrong your report was not submitted.');
   window.location = 'index.php';
     </script>    
-  <?php
+  <?php 
  
       }
 

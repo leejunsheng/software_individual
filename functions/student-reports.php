@@ -1,4 +1,4 @@
-<?php
+<?php 
 include '../dbcon.php';
 session_start();
 $get_user = $_SESSION['id'];

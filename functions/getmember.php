@@ -1,4 +1,4 @@
-<?php
+<?php 
 include 'dbcon.php';
 $memberNo = $_GET['q'];
 

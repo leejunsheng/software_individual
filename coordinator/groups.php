@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 include '../header.php';
 $result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
@@ -13,7 +13,7 @@ $result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
 	<div class="w3-row-padding">
 		<!-- Left Column -->
 		<div class="w3-col m3 ">
-			<?php
+			<?php 
 			include 'coord-nav.php';
 			?>
 			<!-- End Left Column -->
@@ -43,16 +43,16 @@ $result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
 						<tr>
 
 
-							<?php
+							<?php 
 							$grpsql = mysqli_query($dbcon, "SELECT * FROM grp ") or die(mysqli_error());
 
 							while ($group = mysqli_fetch_array($grpsql)) {
 								$groupNo = $group['grpNo'];
 							?>
 
-								<td> <?php echo $groupNo; ?> </td>
+								<td> <?php  echo $groupNo; ?> </td>
 								<td>
-									<?php
+									<?php 
 
 									$membersql = mysqli_query($dbcon, "SELECT regNo, fName, mName, lName FROM student WHERE regNo IN (SELECT regNo FROM members where grpNo = '$groupNo')") or die(mysqli_error());
 
@@ -88,9 +88,9 @@ $result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
 									}
 									?>
 								</td>
-								<td><?php echo $supervisor; ?></td>
+								<td><?php  echo $supervisor; ?></td>
 						</tr>
-					<?php
+					<?php 
 
 							}
 
@@ -113,6 +113,6 @@ $result = mysqli_query($dbcon, "SELECT * FROM student") or die(mysql_error());
 	<br>
 
 	<!-- Footer -->
-	<?php
+	<?php 
 	include '../footer.php';
 	?>

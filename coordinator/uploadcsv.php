@@ -1,5 +1,5 @@
 
-<?php
+<?php 
   include '../dbcon.php';
 ?>
 

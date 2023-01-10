@@ -1,4 +1,4 @@
-<?php
+<?php 
   include '../header.php';
  
  $studentconcept = mysqli_query($dbcon, "SELECT * FROM conceptnote ") or die(mysqli_error());
@@ -10,7 +10,7 @@
   <div class="w3-row">
     <!-- Left Column -->
     <div class="w3-col m3">
-    <?php include 'coord-nav.php';   ?>
+    <?php  include 'coord-nav.php';   ?>
     <!-- End Left Column -->
     </div>
     
@@ -37,19 +37,19 @@
 				    <th></th>
 				  </tr>
 				</thead>
-				<?php 
+				<?php  
 					while($concept_note=mysqli_fetch_array($studentconcept)) {
 						$noteId = $concept_note['conceptid'];
 						$approval = $concept_note['approval'];
 				?>
 				<tr>
-				  <td><?php echo $concept_note['studentid']; ?></td>
-				  <td><?php echo $concept_note['proposedtitle']; ?></td>
-				  <td><?php echo '<a href="'.$concept_note['conceptfile'].'">View Document</a>'; ?></td>
-				  <td><?php echo $concept_note['supervisor']; ?></td>
-			      <td><?php echo $concept_note['reccomended']; ?></td>
+				  <td><?php  echo $concept_note['studentid']; ?></td>
+				  <td><?php  echo $concept_note['proposedtitle']; ?></td>
+				  <td><?php  echo '<a href="'.$concept_note['conceptfile'].'">View Document</a>'; ?></td>
+				  <td><?php  echo $concept_note['supervisor']; ?></td>
+			      <td><?php  echo $concept_note['reccomended']; ?></td>
 			      <td>
-			      <?php
+			      <?php 
 
 					if ($approval =="waiting") {
 				         echo '<a href="approval.php?concept='.$noteId.'"><button class="w3-padding w3-btn w3-green w3-left-align" ><i class="fa fa-check fa-fw"></i></button> </a>'; 
@@ -68,7 +68,7 @@
 			      ?>
 				  </td>
 				</tr>
-				<?php } ?>
+				<?php  } ?>
 				</table>
 			
 				</div>
@@ -87,7 +87,7 @@
 <br>
 
 <!-- Footer -->
-<?php
+<?php 
   include '../footer.php';
 ?>
 

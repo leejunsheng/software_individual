@@ -1,4 +1,4 @@
-<?php
+<?php 
   include '../header.php';
   if (!($_SESSION['id']) ){
 header('location:../index.php');
@@ -20,7 +20,7 @@ $user_row = mysqli_fetch_array($result);
     <!-- Left Column -->
     <div class="w3-col m3">
       <!-- Profile -->
-      <?php
+      <?php 
         include 'coord-nav.php';
       ?>
       
@@ -33,14 +33,14 @@ $user_row = mysqli_fetch_array($result);
       
         <div class="w3-row-padding">
           <div class="w3-col m12">    
-            <?php include 'announce.php'; ?> 
+            <?php  include 'announce.php'; ?> 
             
          </div>
         </div> 
     <br />
         <div class="w3-row-padding">
           <div class="w3-col m12">     
-            <?php include 'coord-dash.php'; ?>
+            <?php  include 'coord-dash.php'; ?>
          </div>
         </div> 
         </div>
@@ -104,7 +104,7 @@ function manageStudents() {
   }
 </script>
 <!-- Footer -->
-<?php
+<?php 
   include '../footer.php';
 ?>
 

@@ -1,4 +1,4 @@
-<?php
+<?php 
   include '../header.php';
 
 ?>
@@ -9,7 +9,7 @@
   <div class="w3-row">
     <!-- Left Column -->
     <div class="w3-col m3">
-    <?php
+    <?php 
       include 'sup-nav.php';
     ?>
     
@@ -22,13 +22,13 @@
 
       <div class="w3-row-padding">
         <div class="w3-col m12">     
-          <?php include 'sup-dash.php'; ?>
+          <?php  include 'sup-dash.php'; ?>
        </div>
       </div> 
 <br /><br />
       <!--div class="w3-row-padding">
         <div class="w3-col m12">     
-          <?php //include '../functions/announcements.php'; ?>
+          <?php  //include '../functions/announcements.php'; ?>
        </div>
       </div--> 
       </div>
@@ -44,7 +44,7 @@
 <br />
 
 <!-- Footer -->
-<?php
+<?php 
   include '../footer.php';
 ?>
 

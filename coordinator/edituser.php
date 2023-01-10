@@ -1,4 +1,4 @@
-<?php
+<?php 
  error_reporting(0);
   include '../header.php';
     $get_user = $_GET['user'];
@@ -10,7 +10,7 @@
   <div class="w3-row">
     <!-- Left Column -->
     <div class="w3-col m3">
-    <?php
+    <?php 
       include 'coord-nav.php';
     ?>
     <!-- End Left Column -->
@@ -30,14 +30,14 @@
               <div class="w3-col m12">
               <h3 class="w3-center">UPDATE PASSWORD</h3>
               </div>
-              <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-              <div class="w3-col m3 w3-padding"><input class="w3-input" type="text" name="student" value="<?php echo $get_user;  ?>" placeholder="Username" required> </div>
+              <form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+              <div class="w3-col m3 w3-padding"><input class="w3-input" type="text" name="student" value="<?php  echo $get_user;  ?>" placeholder="Username" required> </div>
                 <div class="w3-col m3 w3-padding"><input class="w3-input" type="password" name="pass" placeholder="Password" required> </div>
             <div class="w3-col m3 w3-padding"><input class="w3-input" type="password" name="confirmpass" placeholder="Confirm Password" required></div>
             <div class="w3-col m3 w3-padding"><button type="" name="update" class="w3-btn" > Update Password</button></div>
           </form>
           <div class="w3-center">
-            <?php
+            <?php 
                 if(isset($_POST['update']))
                 {
                   $student = $_POST['student'];
@@ -111,7 +111,7 @@ function loadDoc() {
 
 </script>
 <!-- Footer -->
-<?php
+<?php 
   include '../footer.php';
 ?>
 

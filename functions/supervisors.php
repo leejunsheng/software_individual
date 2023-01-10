@@ -1,4 +1,4 @@
-<?php include 'header.php'; 
+<?php  include 'header.php'; 
 //$get_user = $_GET['user'];
 $get_user = $_SESSION['id'];
 
@@ -20,9 +20,9 @@ $user_row = mysqli_fetch_array($result);
          <h4 class="w3-center">My Profile</h4>
          <p class="w3-center"><img src="../images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName'] ?> </p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i><?php echo $user_row['regNo']; ?></p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php echo $user_row['course']; ?></p>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php  echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName'] ?> </p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i><?php  echo $user_row['regNo']; ?></p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php  echo $user_row['course']; ?></p>
         </div>
       </div>
       <br>
@@ -33,7 +33,7 @@ $user_row = mysqli_fetch_array($result);
           <button onclick="myFunction('Demo1')" class="w3-btn-block w3-blue w3-left-align"><i class="fa fa-file fa-fw w3-margin-right"></i>Concept Note</button>
           <div id="Demo1" class="w3-hide w3-container">
             <p>Submitted.
-            <?php #Check if you have submitted concept note 
+            <?php  #Check if you have submitted concept note 
             /*if (concepnotesubmitted) {
               echo "You have submitted your concept note";
               if (noteis approved) {
@@ -60,7 +60,7 @@ $user_row = mysqli_fetch_array($result);
         <div class="w3-white">
           <button onclick="myFunction('Demo2')" class="w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Group </button>
           <div id="Demo2" class="w3-hide w3-container">
-            <?php 
+            <?php  
             #$sqlgroup = "SELECT grpNo FROM members WHERE regNo='$get_user'";
             $sqlgrp = mysqli_query($dbcon, "SELECT grpNo FROM members WHERE regNo='$get_user'") or die(mysqli_error());
             $group_row = mysqli_fetch_array($sqlgrp);
@@ -91,7 +91,7 @@ $user_row = mysqli_fetch_array($result);
           <div id="Demo3" class="w3-hide w3-container">
 
               <p><a
-              <?php
+              <?php 
 
               $repsql = "SELECT report1 FROM progressreport WHERE projectId = (SELECT projectId FROM project WHERE grpNo = '$groupNo')";
               $reportsql = mysqli_query($dbcon,$repsql) or die(mysqli_error($dbcon));
@@ -131,7 +131,7 @@ $user_row = mysqli_fetch_array($result);
       </div>
       
       <div id="main">
-      <?php include 'supervisor.php'; ?>
+      <?php  include 'supervisor.php'; ?>
       
       </div>
       
@@ -179,5 +179,5 @@ $user_row = mysqli_fetch_array($result);
 <br>
 
 <!-- Footer -->
-<?php include 'footer.php'; ?>
+<?php  include 'footer.php'; ?>
 

@@ -1,4 +1,4 @@
-<?php
+<?php 
 include '../header.php';
 $supId = $_SESSION['id'];
 
@@ -10,7 +10,7 @@ $supId = $_SESSION['id'];
 	<div class="w3-row-padding">
 		<!-- Left Column -->
 		<div class="w3-col m3 ">
-			<?php
+			<?php 
 			include 'sup-nav.php';
 			?>
 			<!-- End Left Column -->
@@ -33,7 +33,7 @@ $supId = $_SESSION['id'];
 					<tr>
 
 
-						<?php
+						<?php 
 						$grpsql = mysqli_query($dbcon, "SELECT * FROM grp WHERE empId = '$supId'") or die(mysqli_error());
 
 						while ($group = mysqli_fetch_array($grpsql)) {
@@ -41,9 +41,9 @@ $supId = $_SESSION['id'];
 							//var_dump($grpsql);
 						?>
 
-							<td> <?php echo $groupNo; ?> </td>
+							<td> <?php  echo $groupNo; ?> </td>
 							<td>
-								<?php
+								<?php 
 								//$group_rows = mysqli_num_rows($grpsql);
 
 								$membersql = mysqli_query($dbcon, "SELECT regNo, fName, mName, lName FROM student WHERE regNo IN (SELECT regNo FROM members where grpNo = '$groupNo')") or die(mysqli_error());
@@ -90,7 +90,7 @@ $supId = $_SESSION['id'];
 								?>
 							
 					</tr>
-				<?php
+				<?php 
 							//$group_rows++;
 						}
 
@@ -111,6 +111,6 @@ $supId = $_SESSION['id'];
 <br>
 
 <!-- Footer -->
-<?php
+<?php 
 include '../footer.php';
 ?>

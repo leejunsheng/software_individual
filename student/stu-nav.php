@@ -1,4 +1,4 @@
-<?php 
+<?php  
 
 
   $get_user = $_SESSION['id'];
@@ -14,10 +14,10 @@
         <h4 class="w3-center">Student's Dashboard</h4>
          <!--p class="w3-center"><img src="../images/avatar6.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p-->
          <hr>
-         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Name:</strong> <?php echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName'] ?> </p>
-         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Reg:</strong> <?php echo $user_row['regNo'];  ?></p>
+         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Name:</strong> <?php  echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName'] ?> </p>
+         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Reg:</strong> <?php  echo $user_row['regNo'];  ?></p>
 
-         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Course:</strong>  <?php echo $user_row['course']; ?></p >
+         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Course:</strong>  <?php  echo $user_row['course']; ?></p >
         </div>
       </div>
       <br />
@@ -28,7 +28,7 @@
           <div id="Demo1" class="w3-hide w3-container">
             <p>
 
-            <?php 
+            <?php  
             #$conceptsql = "SELECT * FROM conceptnote WHERE student = '$regNo'";
             $studentconcept = mysqli_query($dbcon, "SELECT * FROM conceptnote WHERE studentid = '$regNo'") or die(mysqli_error());
 
@@ -48,7 +48,7 @@
                   <br />
                   <a href="conceptnote.php"><button class="w3-btn w3-btn-block w3-grey" >Submit Another Concept</button></a>
                   <br 
-              <?php
+              <?php 
                  }
                 else
                 {
@@ -60,7 +60,7 @@
               <br />
               <a href="conceptnote.php"><button class="w3-btn w3-btn-block w3-grey" >Submit Concept</button></a>
               <br />
-            <?php } 
+            <?php  } 
               
             ?> 
 
@@ -73,7 +73,7 @@
         <div class="w3-white">
           <button onclick="myFunction('Demo2')" class="w3-btn-block w3-blue w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Group </button>
           <div id="Demo2" class="w3-hide w3-container">
-            <?php 
+            <?php  
             #$sqlgroup = "SELECT grpNo FROM members WHERE regNo='$get_user'";
             $sqlgrp = mysqli_query($dbcon, "SELECT grpNo FROM members WHERE regNo='$get_user'") or die(mysqli_error());
             $group_row = mysqli_fetch_array($sqlgrp);
@@ -99,7 +99,7 @@
               <br />
               <a href="suggestgroup.php"><button class="w3-btn w3-btn-block w3-grey">Suggest Group</button></a>
               <br />
-            <?php } 
+            <?php  } 
 
 
             ?>
