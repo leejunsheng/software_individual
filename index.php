@@ -101,7 +101,7 @@ include('nav-header.php');
        
             <div class="card-body px-4 py-5 px-md-5" >
             <h6 class="text-muted">Please enter your ID and password to login.</h5>
-              <form>
+              <form method="POST">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
                   <div class="mb-4">
