@@ -114,7 +114,7 @@ function suggestGroup() {
         xmlhttp.open("GET", "submitgroup.php", true);
         xmlhttp.send();
     }
-}
+
 function showMember(str) {
     if (str.length == 0) { 
         document.getElementById("member1").innerHTML = "";
