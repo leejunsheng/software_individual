@@ -2,7 +2,7 @@
 
 $output=null;
 $output2=null;
- 
+  
 include 'dbcon.php';
  
 // Check connection
