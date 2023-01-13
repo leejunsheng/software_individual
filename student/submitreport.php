@@ -30,16 +30,16 @@
               <label class="w3-label"><input type="radio" name="report_type" value="review" class="" required> Submit Report for Review</label> 
               <br />
 
-              <label class="w3-label"><input type="radio" name="report_type" value="semester1-progress" class=""> Semester 1 - Progress Report </label>
+              <label class="w3-label"><input type="radio" name="report_type" value="semester1-progress" class=""> FYP proposal (pdf)</label>
               <br />
 
-              <label class="w3-label"><input type="radio" name="report_type" value="semester1-final" class="" > Semester 1 - Final Submission</label> 
+              <label class="w3-label"><input type="radio" name="report_type" value="semester1-final" class="" > Dissertation drafts</label> 
               <br />
 
-              <label class="w3-label"><input type="radio" name="report_type" value="semester2-progress" class="" > Semester 2 - Progress Report </label>
+              <label class="w3-label"><input type="radio" name="report_type" value="semester2-progress" class="" > Final Presentation Slides </label>
               <br />
 
-              <label class="w3-label"><input type="radio" name="report_type" value="semester2-final" class="" > Semester 2 - Final Submission</label> 
+              <label class="w3-label"><input type="radio" name="report_type" value="semester2-final" class="" > FYP poster</label> 
               <br />
 
               <br />

@@ -69,7 +69,8 @@ include('nav-header.php');
             if (isset($_POST['submit'])) {
 
               $username = $_POST['username'];
-              $pass = $_POST['password'];
+              $pass = md5($_POST['password']);
+               $password = md5($_POST['password']);
               $password = ($pass);
 
 

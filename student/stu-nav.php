@@ -12,6 +12,11 @@ $regNo =  $user_row['regNo'];
 <div class="w3-card-2 w3-round w3-white">
   <div class="w3-container">
     <h4 class="w3-center">Student's Dashboard</h4>
+    <hr>
+         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Name:</strong> <?php echo $user_row['lName'].", ".$user_row['fName']." ".$user_row['mName'] ?> </p>
+         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Reg:</strong> <?php echo $user_row['regNo'];  ?></p>
+
+         <p><i class="fa fa-fw w3-margin-right w3-text-theme"></i><strong>Course:</strong>  <?php echo $user_row['course']; ?></p >
   </div>
 </div>
 <br />
